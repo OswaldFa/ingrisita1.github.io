@@ -16,7 +16,7 @@
         }
         h1 {
             color: white;
-        }    
+        }
         .btn {
             padding: 10px 20px;
             margin: 20px;
@@ -33,19 +33,30 @@
             color: white;
             border: none;
         }
+        .respuesta {
+            font-size: 20px;
+            color: white;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
-    <h1>¿Te gustaría acompañarme este 14 de febrero mi amor?<3 </h1>
+    <h1>¿Te gustaría ser mi san valentín este 14 de febrero mi amor?<3 </h1>
     <button class="btn yes-btn" onclick="mostrarMensaje('Te quiero mucho')">Sí, quiero oswaldito:)</button>
     <button class="btn yes-btn" onclick="mostrarMensaje('Te quiero mucho')">Claro que sí oswaldito:)</button>
     <button class="btn yes-btn" onclick="mostrarMensaje('Te quiero mucho')">Sí, me encantaría oswaldito<3</button>
     <button class="btn no-btn" onclick="cancelarPropuesta()">No oswaldito feo</button>
+
+    <p id="respuesta" class="respuesta"></p>
+
     <script>
         function mostrarMensaje(respuesta) {
+            document.getElementById('respuesta').innerText = "Respuesta: " + respuesta;
             alert("Gracias por querer pasar a mi lado ingrisita<3: " + respuesta);
         }
+
         function cancelarPropuesta() {
+            document.getElementById('respuesta').innerText = "¡Ups! No puedes decir 'No' a esta propuesta mi amor :( tiste";
             alert("¡Ups! No puedes decir 'No' a esta propuesta mi amor :( tiste");
         }
     </script>
