@@ -53,8 +53,11 @@
         function mostrarMensaje(respuesta) {
             document.getElementById('respuesta').innerText = "Respuesta: " + respuesta;
             alert("Gracias por querer pasar a mi lado ingrisita<3: " + respuesta);
-             setTimeout(function()
-                window.location.href = 'propuesta.html';  
+            
+            // Redirige a propuesta.html después de 2 segundos
+            setTimeout(function() {
+                window.location.href = 'propuesta.html';  // Redirección a la página propuesta.html
+            }, 2000);  // El tiempo de espera es de 2 segundos (puedes modificarlo)
         }
 
         function cancelarPropuesta() {
