@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¡Propuesta Aceptada!</title>
+    <title>Propuesta Aceptada</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #fff5f8;
+            background-image: url('descarga.jpg'); /* Cambia esto si el nombre de la imagen es diferente */
+            background-size: cover; /* Esto hace que la imagen cubra toda la pantalla */
+            background-position: center center; /* Asegura que la imagen esté centrada */
+            background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
             color: #333;
             text-align: center;
             padding: 50px;
+            margin: 0; /* Elimina el margen por defecto del body */
+            height: 100vh; /* Esto asegura que la página tenga el tamaño completo de la ventana del navegador */
         }
         h1 {
             color: #e91e63;
@@ -40,21 +45,12 @@
             color: #e91e63;
             margin-bottom: 20px;
         }
-        .background-image {
-            background-image: url('descarga.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 300px;
-            margin-top: 30px;
-            border-radius: 10px;
-        }
     </style>
 </head>
 <body>
-    <div class="background-image"></div>
     <h1>¡Síííííííííííí!<3</h1>
-    <p>Gracias por aceptarme como tu san valentín, y sobre todo como tu novio<3 Gracias, gracias por todo lo lindo que me entregas cada día
-      gracias por demostrarme que me quieres, que piensas en mi, que me tomas en cuenta en todas tus decisiones
+    <p>Gracias por aceptarme como tu san valentín, y sobre todo como tu novio<3 Gracias por todo lo lindo que me entregas cada día,
+      gracias por demostrarme que me quieres, que piensas en mi, que me tomas en cuenta en todas tus decisiones,
       gracias por ser el apoyo principal de mi vida, gracias por ser lo mejor que tengo, te quiero mi niña </p>
     
     <div class="heart-icon">❤️</div>
@@ -67,6 +63,10 @@
         function volver() {
             // Redirige de vuelta a la página principal (tu archivo de propuesta)
             window.location.href = "index.html";  // Cambia "index.html" si el nombre de tu archivo original es otro
+        }
+    </script>
+</body>
+</html>
         }
     </script>
 </body>
